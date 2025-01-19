@@ -2,8 +2,11 @@ import React from 'react'
 import { useContext } from 'react';
 import Title from './Title';
 import { ShopContext } from '../context/ShopContext';
+import { useNavigate } from "react-router-dom";
 
 const CartTotal = () => {
+  
+  const navigate = useNavigate();
   
   const { currency, delivery_fee, subtotal, total, getCartAmount } =
     useContext(ShopContext);
