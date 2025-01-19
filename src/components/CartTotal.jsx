@@ -40,14 +40,7 @@ const CartTotal = () => {
           </b>
         </div>
       </div>
-      <div className="w-full text-end">
-        <button
-          onClick={() => navigate("/place-order")}
-          className="bg-black my-8 px-8 py-3 text-white"
-        >
-          PROCEED TO CHECKOUT
-        </button>
-      </div>
+     
     </div>
   );
 }
